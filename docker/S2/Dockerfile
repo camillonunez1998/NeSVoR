@@ -1,5 +1,5 @@
 FROM nesvor-s1:latest as builder
-FROM nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu22.04
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y build-essential software-properties-common && \

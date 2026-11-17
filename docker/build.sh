@@ -1,5 +1,5 @@
 cd ./S1 
-git clone --depth 1 https://github.com/daviddmc/NeSVoR.git
+git -C ../.. archive --prefix=NeSVoR/ HEAD | tar -x
 mkdir ./NeSVoR/nesvor/checkpoints
 wget -O ./NeSVoR/nesvor/checkpoints/SVoRT_v2.pt https://zenodo.org/record/7486938/files/checkpoint_v2.pt?download=1
 docker build --force-rm -t nesvor-s1 .
